@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            <h2>Weather ⛈️</h2>
+        </div>
+    </header>
+    <main>
+            <div class="main">
+                <div class="left box">
+                    <h3><span class="temp" id="temp"></span><span id="location"></span></h3>
+                    <p class="describtion"></p>
+                    <h5 class="weather" id="weather"></h5>
+                    <h4 class="error"></h4>
+                    <div class="image">
+                        <img id="icon">
+                    </div>
+        
+                    <button id="refresh" onclick="window.location.reload();">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+
+                <h3 class="information">Information about wind 🌪️</h3>
+
+                <div class="right">
+                    <div class="wind box one">
+                        <div class="speed sbox">
+                            <h4>Wind Speed</h4>
+                            <i class="fas fa-tachometer-alt-fast"></i>
+                            <div class="speed_count numbers" id="speed_count"></div>
+                        </div>
+                    </div>
+                    <div class="wind box two">
+                        <div class="direction sbox">
+                            <h4>Wind Direction</h4>
+                            <i class="fas fa-directions"></i>
+                            <div class="wind_direction numbers" id="wind_direction"></div>
+                        </div>
+                    </div>
+
+                    <!-- SUN -->
+                    
+                    <h3 class="information">Information about sun 🌤️</h3>
+                <div class="sun_time">
+                    <div class="sun box sunraise">
+                        <h4>Sunries Time</h4>
+                        <i class="fas fa-sun"></i>
+                        <p class="sunries_time"></p>
+                    </div>
+                    <div class="sun box sunset">
+                        <h4>Sunset Time</h4>
+                        <i class="fas fa-moon"></i>
+                        <p class="sunset_time"></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </main>
+    <!-- INPUT -->
+    <!-- <div class="input_country">
+        <input type="text" class="country_input" placeholder="Enter Country Name">
+        <button type="submit" class="submitbtn">Submit</button>
+    </div> -->
+    <!-- END INPUT -->
+    <!-- <footer>
+        <div class="footer_content">
+            <p>Created by <a href="https://github.com/sbbahh">Sbbah Eltag</a></p>
+        </div>
+    </footer> -->
+
+<script src="app.js"></script>
+</body>
+
+</html>
